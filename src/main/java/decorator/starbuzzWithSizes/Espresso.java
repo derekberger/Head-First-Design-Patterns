@@ -1,4 +1,4 @@
-package headfirst.designpatterns.decorator.starbuzz;
+package decorator.starbuzzWithSizes;
 
 public class Espresso extends Beverage {
   

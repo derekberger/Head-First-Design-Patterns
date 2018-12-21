@@ -1,6 +1,8 @@
-package headfirst.designpatterns.decorator.starbuzzWithSizes;
+package decorator.starbuzz;
  
 public class Whip extends CondimentDecorator {
+	Beverage beverage;
+ 
 	public Whip(Beverage beverage) {
 		this.beverage = beverage;
 	}
@@ -10,6 +12,6 @@ public class Whip extends CondimentDecorator {
 	}
  
 	public double cost() {
-		return beverage.cost() + .10;
+		return .10 + beverage.cost();
 	}
 }
